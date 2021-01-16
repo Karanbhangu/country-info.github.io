@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: radial-gradient(#4281A4, #222E50);
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    overflow: hidden;
+}
+.container{
+    width: 330px;
+    height: 270px;
+    background-color: rgba(255, 255, 255, .1);
+    box-shadow: 0.4px 0.7px 5px rgba(0, 0, 0, .5),
+                inset 2px 2px rgba(0, 0, 0, .1),
+                5px 5px 5px rgba(0, 0, 0, .4),
+                -0.4px -0.7px 5px rgba(0, 0, 0, .5),
+                inset 2px 2px rgba(0, 0, 0, .5),
+                5px 5px 3px rgba(0, 0, 0, .4);
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+}
+#country{
+    font-size: 18px;
+}
+#img img{
+    width:70px;
+    height: 50px;
+}
+input{
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #000;
+    font-weight: bold;
+}
+input::placeholder{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+input:focus{
+    outline: none;
+}
+button{
+    padding: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+button:focus{
+    outline: none;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+#curri{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#curri span, #curri p{
+    text-align: center;
+}
+@media only screen and (max-width:433px){
+    .container{
+        width: 250px;
+        height: 330px;
+    }
+}
